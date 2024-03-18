@@ -1,9 +1,10 @@
+
+
 const mongoose = require('mongoose');
 
-
-
-
 const itemSchema = mongoose.Schema({
+
+
   name: {
     type: String,
     required: true
@@ -27,7 +28,7 @@ const itemSchema = mongoose.Schema({
     required: true
   }
 
-},{timestamps:true});
+}, { timestamps: true });
 
 
 const orderSchema = mongoose.Schema({
@@ -42,9 +43,11 @@ const orderSchema = mongoose.Schema({
     required: true
   },
 
-},{timestamps:true});
 
-const Order = mongoose.model('Order', orderSchema)
+
+}, { timestamps: true });
+
+const Order = mongoose.model('Order', orderSchema);
+
 
 module.exports = Order;
-
