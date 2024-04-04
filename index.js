@@ -9,8 +9,7 @@ const orderRoutes = require('./routes/orderRoutes');
 const fileUpload = require('express-fileupload');
 
 
-mongoose.set('strictQuery',false)
-
+mongoose.set('strictQuery', true);
 mongoose.connect('mongodb+srv://hunterboy:ayush1998@cluster0.fxwwuen.mongodb.net/MiniStore').then((res) => {
   app.listen(port, () =>{
     console.log('listening', port)
